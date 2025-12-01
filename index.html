@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <!-- PASTE YOUR LOGO BASE64 STRING IN THE HREF BELOW FOR FAVICON -->
+    <link rel="icon" type="image/png" href="data:image/png;base64,PASTE_YOUR_BASE64_HERE" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AutomateX Web Studio</title>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:title" content="AutomateX Web Studio" />
+    <meta property="og:description" content="Professional agency website for web development and automation services targeting small businesses in India." />
+    <!-- You can also paste the Base64 here for social preview, though URLs are better for OG tags -->
+    <meta property="og:image" content="" />
+
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+    <script>
+      tailwind.config = {
+        theme: {
+          extend: {
+            fontFamily: {
+              sans: ['Inter', 'sans-serif'],
+            },
+            colors: {
+              primary: '#4F46E5', // Indigo 600
+              secondary: '#10B981', // Emerald 500 (WhatsApp-ish)
+              dark: '#1E293B', // Slate 800
+            },
+            animation: {
+              'fade-in-up': 'fadeInUp 1.2s ease-out forwards',
+              'bounce-slight': 'bounceSlight 2s infinite',
+            },
+            keyframes: {
+              fadeInUp: {
+                '0%': { opacity: '0', transform: 'translateY(20px) scale(0.95)' },
+                '100%': { opacity: '1', transform: 'translateY(0) scale(1)' },
+              },
+              bounceSlight: {
+                '0%, 100%': { transform: 'translateY(-2%)' },
+                '50%': { transform: 'translateY(0)' },
+              }
+            }
+          }
+        }
+      }
+    </script>
+  <script type="importmap">
+{
+  "imports": {
+    "react-router-dom": "https://aistudiocdn.com/react-router-dom@^7.9.6",
+    "lucide-react": "https://aistudiocdn.com/lucide-react@^0.555.0",
+    "react-dom/": "https://aistudiocdn.com/react-dom@^19.2.0/",
+    "react/": "https://aistudiocdn.com/react@^19.2.0/",
+    "react": "https://aistudiocdn.com/react@^19.2.0"
+  }
+}
+</script>
+<link rel="stylesheet" href="/index.css">
+</head>
+  <body>
+    <div id="root"></div>
+  <script type="module" src="/index.tsx"></script>
+</body>
+</html>
